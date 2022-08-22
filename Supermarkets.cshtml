@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Supermarkets";
+}
+
+<h1>Supermarkets</h1>
+<p> there are @ViewBag.count markets: </p>
+@foreach (var str in ViewBag.Collection)
+{
+    @Html.Raw(str);
+    <br />
+}
+
